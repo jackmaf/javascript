@@ -1,6 +1,6 @@
 # OBJECTOS
 ## 1. INICIALIZACION Y DECLARACION DE OBJECTOS
-### 1.1 ESTRUCTURA
+### 1.1 Estructura
 ```javascript
 var NOMBRE_OBJECTO = {
   NOMBRE_ATRIBUTO: "DATO QUE GUARDA",
@@ -8,7 +8,7 @@ var NOMBRE_OBJECTO = {
   NOMBRE_ATRIBUTO_TRES: [2,3,4,5]
 }
 ```
-### 1.2 EJEMPLOS
+### 1.2 Ejemplos
 ```javascript
 var mi_auto = {
   marca: "Chevrolet",
@@ -23,19 +23,19 @@ let pokemon = {
 }
 ```
 ## 2. LLAMADO DE ATRIBUTOS DE UN OBJECTO
-### 2.1 ESTRUCTURA
+### 2.1 Estructura
 ```javascript
 NOMBRE_OBJECTO.NOMBRE_ATRIBUTO // DEVUELVE "DATO QUE GUARDA"
 NOMBRE_OBJECTO.NOMBRE_ATRIBUTO_DOS // DEVUELVE 2
 ```
-### 2.2 EJEMPLOS
+### 2.2 Ejemplos
 ```javascript
 mi_auto.marca// DEVUELVE "Chevrolet"
 pokemon.nombre// DEVUELVE "Pikachu"
 ```
 
 ## 3. FUNCIONES O METODOS DENTRO DE UN OBJECTO
-### 3.1 ESTRUCTURA
+### 3.1 Estructura
 ```javascript
 var NOMBRE_OBJECTO = {
   NOMBRE_ATRIBUTO: "DATO QUE GUARDA",
@@ -49,7 +49,7 @@ var NOMBRE_OBJECTO = {
 }
 ```
 
-### 3.2 EJEMPLOS
+### 3.2 Ejemplos
 ```javascript
 var mi_auto = {
   marca: "Chevrolet",
@@ -80,12 +80,12 @@ let pokemon = {
 ```
 
 ## 4. LLAMADO DE FUNCIONES O METODOS EN UN OBJECTO
-### 4.1 ESTRUCTURA
+### 4.1 Estructura
 ```javascript
 NOMBRE_OBJECTO.NOMBRE_FUNCION();
 NOMBRE_OBJECTO.NOMBRE_FUNCION(PARAMETRO_UNO, PARAMETRO_DOS);
 ```
-### 4.2 EJEMPLOS
+### 4.2 Ejemplos
 ```javascript
 mi_auto.nombre_completo();
 pokemon.tirar_pokeball();
@@ -93,7 +93,7 @@ mi_auto.kilometraje(34);
 ```
 
 ## 5. FUNCIONES CONSTRUCTORAS DE OBJECTOS
-### 5.1 ESTRUCTURA CREAR TU MOLDE
+### 5.1 Estructura CREAR TU MOLDE
 ```javascript
 function NOMBRE_FUNCION_CONSTRUCTORA(PARAMETRO_UNO, PARAMETRO_DOS){
   this.NOMBRE_ATRIBUTO = PARAMETRO_UNO;
@@ -109,7 +109,7 @@ function NOMBRE_FUNCION_CONSTRUCTORA(PARAMETRO_UNO, PARAMETRO_DOS){
 }
 ```
 
-### 5.2 EJEMPLOS CREAR MOLDE
+### 5.2 Ejemplos CREAR MOLDE
 ```javascript
 function molde_galleta(nombre_ingresado, sabor_ingresado, ingrediente_secreto_ingresado){
   this.nombre = nombre_ingresado;
@@ -139,11 +139,25 @@ function molde_pokemon(nombre_ingresado, elemento_ingresado, hp_ingresado){
 }
 ```
 
-### 5.3 ESTRUCTURA USAR UN MOLDE Y CREA UN NUEVO OBJECTO :D
+### 5.3 Estructura USAR UN MOLDE Y CREA UN NUEVO OBJECTO :D
 ```javascript
 let NOMBRE_OBJECTO_UNO = new NOMBRE_FUNCION_CONSTRUCTORA(PARAMETRO_UNO, PARAMETRO_DOS);
-var NOMBRE_OBJECTO_DOS = new NOMBRE_MODEL_CONSTRUCTOR(PARAMETRO_UNO, PARAMETRO_DOS);
+let NOMBRE_OBJECTO_DOS = new NOMBRE_MODEL_CONSTRUCTOR(PARAMETRO_UNO, PARAMETRO_DOS);
 var NOMBRE_OBJECTO_TRES = new NOMBRE_MODEL_CONSTRUCTOR();
 ```
 
-### 5.4 
+### 5.4 Ejemplos
+```javascript
+let galleta_navidad = new molde_galleta("Galleta papa noel", "Azucarado", "pisca de tallo de naranjo");
+let carro_uno = new molde_auto("Mazda", "CX8", "2021");
+let carro_dos = new molde_auto("Chevrolet", "Onix", "2021");
+let pikachu = new molde_pokemon("Pikachu", "electrico", 1320);
+let charizard = new molde_pokemon("Charizard", "Fuego", 5220);
+```
+
+## 6. ASIGNAR NUEVOS METODOS DESPUES DE DECLARADO LA FUNCION CONSTRUCTORA
+```javascript
+molde_pokemon.prototype.saludar = function(){
+  return `${this.nombre}!!!! :D`;
+}
+```
