@@ -12,7 +12,7 @@ var nombre = prompt("ingresa nombre");
 console.log("ahora estas en la matrix "+nombre);
 ```
 
-![I1](https://github.com/jackmaf/javascript/blob/master/images/foto_prueba.png)
+![I1](https://github.com/jackmaf/javascript/blob/master/images/foto_prueba_2.png)
 
 ## Tables
 
