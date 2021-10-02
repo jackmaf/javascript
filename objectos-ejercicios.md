@@ -34,7 +34,7 @@ para la clase:
 
 5.1 esFuerte(): devuelve un booleano si es fuerte o no, para que sea fuerte debe tener mas de 2 mayúsculas, mas de 1 minúscula y mas de 5 números.
 5.2 generarPassword():  genera la contraseña del objeto con la longitud que tenga.
-5.3 seguridadPaswword(); indicar si la contraseña es debil contiene entre 1 a 6 caracteres solo numeros, media (7 a 10 caracteres numeros y letras) o fuerte (11 a 20 caracteres letras y caracteres especiales)
+5.3 seguridadPaswword(); indicar si la contraseña es debil contiene entre 1 a 6 caracteres (caracteres numeros y letras), media (7 a 10 caracteres numeros y letras) o fuerte (11 a 20 caracteres letras y caracteres especiales)
 
 
 6.  Implementar un objeto que modele un contador. Un contador se puede incrementar o decrementar, recordando el valor actual. Al resetear un contador, se pone en cero.
