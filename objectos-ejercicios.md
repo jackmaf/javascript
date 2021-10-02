@@ -114,8 +114,8 @@ el resultado debe ser 24.
  los siguiente metodos para la clase:
 
 préstamo() que incremente el atributo correspondiente cada vez que se realice un préstamo del libro. No se podrán prestar libros de los que no queden ejemplares disponibles para prestar. Devuelve true si se ha podido realizar la operación y false en caso contrario.
-devolución() que decremente el atributo correspondiente cuando se produzca la devolución de un libro. No se podrán devolver libros que no se hayan prestado. Devuelve true si se ha podido realizar la operación y false en caso contrario.
-toString() para mostrar los datos de los libros. Este método se heredada de Object y lo debemos modificar (override) para adaptarlo a la clase Libro.
+devolucion() que decremente el atributo correspondiente cuando se produzca la devolución de un libro. No se podrán devolver libros que no se hayan prestado. Devuelve true si se ha podido realizar la operación y false en caso contrario.
+toString() para mostrar los datos de los libros.
 
 12. Se está pensando en el diseño de un juego que incluye la nave espacial Enterprise.
 En el juego, esta nave tiene un nivel de potencia de 0 a 100, y un nivel de coraza
