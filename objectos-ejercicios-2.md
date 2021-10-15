@@ -1,5 +1,47 @@
 
 # Examen objectos clases y metodos contructores
+Crear una clase o metodo constructor para crear 3 objetos empresa inicializandolos y declarandolos con los siguientes atributos y funciones:
+1. nombre(nombre completo de la empresa)
+"Jack company"
+2. nit(un numero de 10 digitos los ultimos 4 digitos corresponde al tipo de empresa)
+3. tipo_empresa
+4. empleados(arreglo con todos los nombre de los empleados)
+["Lina Maria Sepulveda", "Luis miguel"]
+5. edades(arreglo con todas las edades de los empleados)
+[18,34]
+6. Genero(arreglo con cada sexo de los empleados)
+["F","M","O"]
+7. es_cabeza_de_hogar(arreglo con verdadero o falso)
+[true,false]
+8. nomina(arreglo que guardara el valor a pagar de cada empleado)
+9. metodo crear_datos_iniciales() que mediante prompt solicitara nombre y nit de la empresa tener encuenta que existen las siguientes validaciones:
+A. el nombre y el nit no puede estar vacio si se colocan vacio alguno  se deben requerir denuevo los datos
+B. el nit de la empresa es un numero de 10 digitos si no es de este tamaño se debe requerir denuevo los 2 datos
+10. metodo ingresar_empleado()  que mediante prompt solicitara nombre completo, genero, es cabeza de hogar y los ingresara a los atributos de la empresa correspondientes
+11. metodo mujeres() que traera todas las mujeres de la empresa en forma de arreglo
+12. metodo hombres() que traera todos los hombres de la empresa en forma de arreglo
+13. metodo generar_nomina() que generara la nomina a pagar a cada persona con las siguientes condicciones:
+A. si es su edad esta entre 20 o 30 ganara $200.000 cop extra al sueldo base
+B. si es su edad esta entre 30 o 40 ganara $400.000 cop extra al sueldo base
+C. si es su edad esta entre 40 o 50 ganara $500.000 cop extra al sueldo base
+D. si es su edad esta entre 50 o 60 ganara $600.000 cop extra al sueldo base
+E. si es su edad es mayor de 60 ganara $700.000 cop extra al sueldo base
+F. si es cabeza de hogar ganara un 30% mas de su sueldo base
+G. si es mujer ganara un 10% mas de su sueldo base
+H. el sueldo base de cada trabajador es el salario minimo legal vigente
+14. metodo total_nomina() que dara el total de la nomina de la empresa
+15. metodo generar_tipo_empresa() que tomara el nit y sus 4 numeros finales y dira el tipo de la empresa
+A. si la suma de los 4 sus digitos es divisible entre 7 es
+-Sociedad por Acciones Simplificadas (S.A.S.)
+B. si la suma de los 4 sus digitos es divisible entre 5 es
+-Sociedad Anónima (S.A.)
+C. si la suma de los 4 sus digitos es divisible entre 3 es
+-Sociedades Limitadas (LTDA)
+D. si la suma de los 4 sus digitos es divisible entre 2 es
+-Sociedad Comandita por Acciones (S. C. A.)
+16. metodo liquidar(nombre_trabajador) que buscara por el nombre de un trabajo y eliminara de la empresa pero sacara un mensaje de la siguiente forma:"El trabajado Juan tuesta Masculino cabeza de hogar se liquida de la empresa Jack company S.A.S con nit 1234567890 con un saldo a favor de (el valor total nomina*3)"
+
+
 Crear una clase o metodo constructor para crear 3 objetos plantas inicializandolos y declarandolos con los siguientes atributos y funciones:
 
 1. es_de_sol (que guardara true o false)
