@@ -1,4 +1,0 @@
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
