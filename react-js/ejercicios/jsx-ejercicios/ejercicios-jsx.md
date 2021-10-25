@@ -1,6 +1,7 @@
 # ejercicios jsx
 
-realizar los siguientes 13 ejercicios usando react-js y usando el codigo base dado en: [codigo base practica jsx](https://github.com/jackmaf/javascript/blob/master/react-js/ejercicios/jsx-ejercicios/codigo-base-ejercicios-jsx/1/index.html)
+realizar los siguientes 13 ejercicios usando alguna estructura de datos en javascript(Arreglos, Tuplas, Objectos, Pilas, Colas, Listas enlazadas, etc...) y usando JSX.
+para lo cual te doy un ejemplo de codigo base dado en: [codigo base practica jsx](https://github.com/jackmaf/javascript/blob/master/react-js/ejercicios/jsx-ejercicios/codigo-base-ejercicios-jsx/1/index.html)
 
 ## 1.
 ![I1](https://github.com/jackmaf/javascript/blob/master/react-js/ejercicios/jsx-ejercicios/images/1.png)
